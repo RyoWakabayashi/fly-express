@@ -88,6 +88,18 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
 }).addTo(map);
 
+let trackingPath = L.polyline([], { color: 'blue' }).addTo(map);
+
+function updatePosition() {
+  navigator.geolocation.getCurrentPosition((position) => {
+    const latlng = [position.coords.latitude, position.coords.longitude];
+    trackingPath.addLatLng(latlng);
+    map.panTo(latlng);
+  });
+}
+
+setInterval(updatePosition, 5000);
+
 // フォーム送信時の処理
 function onFormSubmit(e) {
   e.preventDefault();
