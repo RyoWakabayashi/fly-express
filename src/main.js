@@ -88,7 +88,7 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
 }).addTo(map);
 
-let trackingPath = L.polyline([], { color: 'blue' }).addTo(map);
+let trackingPath = L.polyline([], { color: "blue" }).addTo(map);
 
 function updatePosition() {
   navigator.geolocation.getCurrentPosition((position) => {
