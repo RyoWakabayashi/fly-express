@@ -78,8 +78,7 @@ asdf で Node.js をインストールする
 
 マイグレーションを実行
 
-    $ yarn prisma migrate deploy
-
+    $ yarn prisma migrate deplo
 ローカルでビルド
 
     $ yarn build

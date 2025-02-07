@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for map-app-20241017 on 2024-10-17T10:43:50+09:00
+# fly.toml app configuration file generated for map-app-2024-11-10 on 2024-11-10T16:29:36+09:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'map-app-20241017'
+app = 'map-app-2024-11-10'
 primary_region = 'syd'
 
 [build]
